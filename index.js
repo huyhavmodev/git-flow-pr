@@ -1,3 +1,3 @@
 // global config
-// reuse config
+// reuse config - custom
 // notification config
