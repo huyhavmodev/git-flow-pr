@@ -10,4 +10,3 @@ jobs:
     steps:
       - name: CI
         run: echo ${GITHUB_HEAD_REF} "Testing"
-        run: code .
