@@ -1,0 +1,13 @@
+name: 'Production 📦📦📦'
+on:
+  release:
+    types:
+      - created
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: CI
+        run: echo "Testing"
+      - name: Delivery
+        run: echo "Delivery"

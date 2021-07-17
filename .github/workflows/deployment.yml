@@ -1,0 +1,12 @@
+name: 'Staging 🚀🚀🚀'
+on:
+  push:
+    branches:
+      - stag
+      - dev
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deployment
+        run: echo ${GITHUB_REF#refs/heads/} "Deployment"
