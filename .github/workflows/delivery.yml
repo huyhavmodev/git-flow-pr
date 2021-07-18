@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: CI
-        run: echo "Testing"
+        run: echo ${GITHUB_REF#refs/heads/} "Testing"
       - name: Delivery
-        run: echo "Delivery"
+        run: echo ${GITHUB_REF#refs/heads/} "Delivery"
