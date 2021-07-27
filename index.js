@@ -1,1 +1,3 @@
-function config() {}
+function config() {
+  return true;
+}
