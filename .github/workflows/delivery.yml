@@ -1,0 +1,13 @@
+name: 'Production 📦📦📦'
+on:
+  release:
+    types:
+      - created
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: CI
+        run: echo ${GITHUB_REF#refs/heads/} "Testing"
+      - name: Delivery
+        run: echo ${GITHUB_REF#refs/heads/} "Delivery"

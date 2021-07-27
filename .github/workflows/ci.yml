@@ -1,0 +1,12 @@
+name: 'CI 🧪'
+on:
+  pull_request:
+    branches:
+      - stag
+      - dev
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: CI
+        run: echo ${GITHUB_HEAD_REF} "Testing"
