@@ -1,3 +1,3 @@
-function config() {
-  return true;
+function config(option) {
+  return option || true;
 }
